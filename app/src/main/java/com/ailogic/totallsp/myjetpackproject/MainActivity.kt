@@ -1,6 +1,5 @@
 package com.ailogic.totallsp.myjetpackproject
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -45,9 +44,9 @@ class MainActivity : ComponentActivity() {
                         .fillMaxWidth(0.5f)
                         .padding(16.dp)
                         .clickable {
-                            Intent(this@MainActivity, MainActivity2::class.java).also {
+                           /* Intent(this@MainActivity, MainActivity2::class.java).also {
                                 startActivity(it)
-                            }
+                            }*/
                         }){
                         ImageCard(painter = painter, contentDescription = desc, title = title)
                     }
@@ -56,9 +55,9 @@ class MainActivity : ComponentActivity() {
                         .fillMaxWidth(0.5f)
                         .padding(16.dp)
                         .clickable {
-                            Intent(this@MainActivity, MainActivity2::class.java).also {
+                            /*Intent(this@MainActivity, MainActivity2::class.java).also {
                                 startActivity(it)
-                            }
+                            }*/
                         }){
                         ImageCardOne(painter = painter, contentDescription = desc, title = title)
                     }
